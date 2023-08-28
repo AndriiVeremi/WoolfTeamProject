@@ -1,12 +1,7 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
 @import url('./base.css');
 @import url('./reset.css');
 @import url('./header.css');
+@import url('./ourLessons.css');
 
 :root {
   /*Breakpoints*/

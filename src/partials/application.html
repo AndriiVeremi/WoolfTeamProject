@@ -1,0 +1,126 @@
+<section class="section">
+  <div class="container">
+    <div class="contact">
+      <h2 class="contact__title">Leave an <span class="contact__decor">application</span></h2>
+      <p class="contact__text">
+        Please use the form below to contact us. Enter your name, email, and message and we'll get
+        back to you shortly.
+      </p>
+      <div class="contact__form-wrapper">
+        <div class="promo contact__promo">
+          <div class="promo__thumb"></div>
+          <div class="promo__meta">
+            <h3 class="promo__title">1000</h3>
+            <p class="promo__text">
+              of our online English language lessons! This journey has been full of discovery,
+              growth and unforgettable moments, and we are happy to share this joyful event with
+              you.
+            </p>
+          </div>
+        </div>
+        <form class="contact-form contact__form">
+          <h3 hidden>Contact form</h3>
+          <div class="contact-form__fields">
+            <div class="contact-form__field-wrapper">
+              <input
+                id="contact-name"
+                class="contact-form__field js-required-field"
+                type="text"
+                placeholder="Name"
+                required
+              />
+              <label class="contact-form__label" for="contact-name">Name</label>
+              <span class="contact-form__error-icon">!</span>
+            </div>
+
+            <div class="contact-form__field-wrapper">
+              <input
+                id="contact-email"
+                class="contact-form__field js-required-field"
+                type="email"
+                placeholder="Email"
+                required
+              />
+              <label class="contact-form__label" for="contact-email">Email</label>
+              <span class="contact-form__error-icon">!</span>
+            </div>
+
+            <div class="contact-form__field-wrapper">
+              <input
+                id="contact-tel"
+                class="contact-form__field js-required-field"
+                type="tel"
+                placeholder="Phone"
+                required
+              />
+              <label class="contact-form__label" for="contact-tel">Phone</label>
+              <span class="contact-form__error-icon">!</span>
+            </div>
+
+            <div class="contact-form__field-wrapper">
+              <textarea
+                id="contact-comment"
+                class="contact-form__field contact-form__field--area"
+                placeholder="Comment"
+              ></textarea>
+              <label class="contact-form__label" for="contact-comment">Comment</label>
+            </div>
+          </div>
+
+          <div class="contact-form__teachers">
+            <h4 class="contact-form__subtitle">Choose a teacher</h4>
+            <div class="contact-form__select-group teacher-select js-contact-radio-select">
+              <label class="teacher-select__label">
+                Maria
+                <input
+                  class="radio-input js-contact-radio"
+                  type="radio"
+                  name="teacher-select"
+                  hidden
+                />
+                <span class="radio" tabindex="0"></span>
+              </label>
+              <label class="teacher-select__label">
+                Artem
+                <input
+                  class="radio-input js-contact-radio"
+                  type="radio"
+                  name="teacher-select"
+                  hidden
+                />
+                <span class="radio" tabindex="0"></span>
+              </label>
+              <label class="teacher-select__label">
+                Ilona
+                <input
+                  class="radio-input js-contact-radio"
+                  type="radio"
+                  name="teacher-select"
+                  hidden
+                />
+                <span class="radio" tabindex="0"></span>
+              </label>
+              <label class="teacher-select__label">
+                Volodymyr
+                <input
+                  class="radio-input js-contact-radio"
+                  type="radio"
+                  name="teacher-select"
+                  hidden
+                />
+                <span class="radio" tabindex="0"></span>
+              </label>
+            </div>
+          </div>
+          <button class="button contact-form__submit js-contact-form-submit" type="submit" disabled>
+            Send
+          </button>
+          <p class="contact-form__policy">
+            By clicking on “Send” button, you agree to our Privacy Policy, and allow Promodo to use
+            this information for marketing purposes.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

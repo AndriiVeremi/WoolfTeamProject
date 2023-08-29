@@ -1,0 +1,21 @@
+.temp-container {
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid tomato;
+  max-width: 375px;
+}
+
+@media screen and (min-width: 768px) {
+  .temp-container {
+    padding: 0 32px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .temp-container {
+    padding: 0 64px;
+    max-width: 1280px;
+  }
+}

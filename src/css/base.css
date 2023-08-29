@@ -73,3 +73,29 @@ img {
     }
   }
 
+  
+  .section-headline {
+    color: #121417;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.13;
+    letter-spacing: 0.02em;
+  }
+
+  .underline {
+    position: relative;
+  }
+  .underline::after {
+    position: absolute;
+    right: 0;
+    top: 27px;
+    z-index: -1;
+    width: 100%;
+    display: block;
+    content: '';
+    height: 10px;
+    border-radius: 8px;
+    background: #BEE8CC;
+  }

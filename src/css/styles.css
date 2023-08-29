@@ -1,6 +1,7 @@
 @import url('./base.css');
 @import url('./reset.css');
 @import url('./header.css');
+@import url('./common/index.css');
 @import url('./ourLessons.css');
 @import url('./application/index.css');
 

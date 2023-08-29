@@ -1,0 +1,133 @@
+.contact-form {
+}
+
+.contact-form__fields {
+  margin-bottom: 32px;
+}
+
+.contact-form__field-wrapper {
+  position: relative;
+}
+
+.contact-form__field-wrapper + .contact-form__field-wrapper {
+  margin-top: 18px;
+}
+
+.contact-form__field {
+  display: block;
+  width: 100%;
+  padding: 16px 18px;
+  line-height: 1.5;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  border-radius: 12px;
+}
+
+.contact-form__field::placeholder {
+  color: var(--primary-text-color);
+  transition: opacity 1s ease-in;
+  opacity: 0;
+}
+
+.contact-form__label {
+  /* display: none; */
+
+  position: absolute;
+  top: 0;
+  left: 18px;
+  transform: translateY(17px);
+
+  font-size: 16px;
+  background-color: #ffffff;
+
+  transition: transform 250ms ease-in;
+}
+
+.contact-form__field:focus,
+.contact-form__field:focus-visible {
+  outline: 1px solid var(--accent);
+}
+
+.contact-form__field.required:invalid {
+  outline: 1px solid #ee323d;
+}
+
+.contact-form__error-icon {
+  display: none;
+}
+
+.contact-form__field.required:invalid ~ .contact-form__error-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ee323d;
+  font-weight: 700;
+
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 23px;
+  height: 23px;
+
+  transform: translateY(-50%);
+
+  border: 2px solid #ee323d;
+  border-radius: 50%;
+}
+
+.contact-form__field.required:not(:placeholder-shown):not(:focus):invalid ~ .contact-form__label,
+.contact-form__field.required:invalid ~ .contact-form__label,
+.contact-form__field.required:focus:invalid ~ .contact-form__label,
+.contact-form__field.required:focus-visible:invalid ~ .contact-form__label {
+  color: #ee323d;
+}
+
+.contact-form__field:focus ~ .contact-form__label,
+.contact-form__field:focus-visible ~ .contact-form__label,
+.contact-form__field:not(:placeholder-shown):not(:focus) ~ .contact-form__label,
+.contact-form__field:not(:placeholder-shown):not(:focus-visible) ~ .contact-form__label {
+  padding: 0 5px;
+  display: block;
+
+  font-size: 12px;
+  color: var(--secondary-text-color);
+
+  transition: transform 250ms ease-in;
+  transform: translateY(-10px);
+}
+
+.contact-form__field--area {
+  height: 104px;
+  resize: none;
+  overflow-y: auto;
+}
+
+.contact-form__teachers {
+  margin-bottom: 32px;
+}
+
+.contact-form__subtitle {
+  margin-bottom: 16px;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+}
+
+.contact-form__select-group {
+}
+
+.contact-form__submit {
+  padding: 16px 0;
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.contact-form__submit:disabled {
+  background-color: #d4fde1;
+}
+
+.contact-form__policy {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--secondary-text-color);
+}

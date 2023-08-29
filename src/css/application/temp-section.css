@@ -1,0 +1,15 @@
+.temp-section {
+  padding-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .temp-section {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .temp-section {
+    padding-bottom: 150px;
+  }
+}

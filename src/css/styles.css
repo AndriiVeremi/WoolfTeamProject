@@ -1,9 +1,15 @@
 @import url('./base.css');
 @import url('./reset.css');
 @import url('./header.css');
+@import url('./common/index.css');
 @import url('./ourLessons.css');
+ feauture/about-us
 @import url('./about-us.css');
-:root  {
+
+@import url('./application/index.css');
+
+:root {
+ main
   /*Breakpoints*/
   --mobile: 375px;
   --tablet: 768px;

@@ -1,14 +1,16 @@
 .hero {
   background-color: rgb(73, 82, 78); /* no bg-image fallback */
 
-  position: relative;
-  padding-top: 425px;
-  padding-bottom: 72px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 16px; /* TO DO: replace with var */
-  max-width: 100%;
-  margin: 0 auto;
+
+    position: relative;
+    padding-top: 425px;
+    padding-bottom: 72px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 16px; /* TO DO: replace with var */ 
+    max-width: 100%;
+    margin: 0 auto 80px;
+
 
   max-width: 335px;
 
@@ -24,15 +26,19 @@
 }
 
 @media (min-width: 768px) {
-  .hero {
-    max-width: 704px;
-    padding-top: 260px;
-    padding-bottom: 295px;
-    padding-left: 32px;
-    padding-right: 32px;
-    border-radius: var(--default-border-radius);
-    background-image: url('../img/hero/hero-tablet.jpg');
-  }
+
+    .hero {
+        max-width: 704px;
+        padding-top: 260px;
+        padding-bottom: 295px;
+        padding-left: 32px;
+        padding-right: 32px;
+        margin-bottom: 100px;
+        border-radius: var(--default-border-radius);
+        background-image:
+                url('../img/hero/hero-tablet.jpg');
+    }
+
 }
 @media (min-width: 768px) and (min-device-pixel-ratio: 2),
   (min-width: 768px) and (min-resolution: 192dpi),
@@ -43,11 +49,14 @@
 }
 
 @media (min-width: 1280px) {
-  .hero {
-    max-width: 1152px;
-    padding: 164px 64px;
-    background-image: url('../img/hero/hero-desktop.jpg');
-  }
+
+    .hero {
+        max-width: 1152px;
+        padding: 164px 64px;
+        margin-bottom: 96px;
+        background-image:
+                url('../img/hero/hero-desktop.jpg');
+    }
 }
 @media (min-width: 1280px) and (min-device-pixel-ratio: 2),
   (min-width: 1280px) and (min-resolution: 192dpi),
@@ -58,11 +67,13 @@
 }
 
 .hero-title {
-  margin-bottom: 40px;
-  color: #ffffff;
-  font-size: 38px;
-  line-height: 1.05;
-  letter-spacing: 0em;
+
+    margin-bottom: 40px;
+    color: #fff;
+        font-size: 38px;
+        line-height: 1.05;
+        letter-spacing: 0em;
+
 }
 @media (min-width: 768px) {
   .hero-title {

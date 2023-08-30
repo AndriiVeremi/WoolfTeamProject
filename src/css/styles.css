@@ -1,9 +1,12 @@
 @import url('./base.css');
 @import url('./reset.css');
+
 @import url('./header.css');
+@import url('./hero.css');
+@import url('./about-us.css');
 @import url('./common/index.css');
 @import url('./ourLessons.css');
-
+/* @import url('./ourTeachers.css'); */
 @import url('./application/index.css');
 @import url('./footer.css');
 
@@ -22,4 +25,4 @@
   /* Radii */
   --default-border-radius: 30px;
   /* Transition */
-
+}

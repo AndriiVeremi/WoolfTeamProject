@@ -6,13 +6,18 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Manrope', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: 400;
-    /* color: var(--primary-text-color); */
-  } 
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  /* color: var(--primary-text-color); */
+}
 
 img {
   display: block;
@@ -44,53 +49,53 @@ img {
 }
 
 .container {
-   /* max-width: 374px; */
-    padding: 0 20px;
-    margin: 0 auto;
-  }
-  
-  @media screen and (min-width: 375px) {
-    .container {
-        width: 375px;
-    }
-  }
-  
-  @media screen and (min-width: 768px) {
-    .container {
-        width: 768px;
-        padding: 0 32px;
-    }
-  }
-  
-  @media screen and (min-width: 1280px) {
-    .container {
-        width: 1280px;
-        padding: 0 64px;
-    }
-  }
+  /* max-width: 374px; */
+  padding: 0 20px;
+  margin: 0 auto;
+}
 
-  .section-headline {
-    color: #121417;
-    text-align: center;
-    font-family: Manrope;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 1.13;
-    letter-spacing: 0.02em;
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
   }
+}
 
-  .underline {
-    position: relative;
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 32px;
   }
-  .underline::after {
-    position: absolute;
-    right: 0;
-    top: 27px;
-    z-index: -1;
-    width: 100%;
-    display: block;
-    content: '';
-    height: 10px;
-    border-radius: 8px;
-    background: #BEE8CC;
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding: 0 64px;
   }
+}
+
+.section-headline {
+  color: #121417;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.13;
+  letter-spacing: 0.02em;
+}
+
+.underline {
+  position: relative;
+}
+.underline::after {
+  position: absolute;
+  right: 0;
+  top: 27px;
+  z-index: -1;
+  width: 100%;
+  display: block;
+  content: '';
+  height: 10px;
+  border-radius: 8px;
+  background: #bee8cc;
+}

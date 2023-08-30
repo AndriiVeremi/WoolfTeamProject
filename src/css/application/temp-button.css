@@ -1,4 +1,5 @@
 .temp-button {
+  cursor: pointer;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.56;
@@ -8,10 +9,56 @@
   border-radius: 12px;
   background-color: var(--accent);
 
-  transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms var(--default-transition-function);
 }
 
 .temp-button:hover,
 .temp-button:active {
   background-color: var(--accent-hovered);
+}
+
+.temp-button.spinner {
+  position: relative;
+}
+
+.temp-button.spinner::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  /* transform: translate(-50%, -50%); */
+
+  background-color: transparent;
+  border-radius: 50%;
+
+  --border-params: 3px solid rgba(255, 255, 255, 0.4);
+
+  border: var(--border-params);
+  border-left: 3px solid rgba(255, 255, 255, 0.8);
+  border-right: 3px solid rgba(255, 255, 255, 0.8);
+
+  /* Aninmation */
+  animation-name: spinner-animation;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.temp-button.spinner > .button-text {
+  opacity: 0;
+}
+
+/* Keyframes */
+
+@keyframes spinner-animation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }

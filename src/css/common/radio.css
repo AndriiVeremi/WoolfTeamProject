@@ -1,8 +1,8 @@
 .radio {
   position: relative;
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
 }
 
@@ -32,4 +32,17 @@
 .radio:focus,
 .radio:focus-visible {
   outline: 2px solid var(--accent);
+}
+
+@media screen and (min-width: 375px) {
+}
+
+@media screen and (min-width: 768px) {
+  .radio {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
 }

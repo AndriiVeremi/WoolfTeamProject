@@ -1,13 +1,37 @@
 .teacher-select {
-  display: flex;
-  column-gap: 16px;
 }
 .teacher-select__label {
+  margin-bottom: 8px;
   cursor: pointer;
   display: flex;
   flex-direction: row-reverse;
+  justify-content: flex-end;
   align-items: center;
-  column-gap: 10px;
-  font-size: 18px;
-  line-height: 1.33;
+  column-gap: 8px;
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.teacher-select__label:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 375px) {
+}
+
+@media screen and (min-width: 768px) {
+  .teacher-select {
+    display: flex;
+    column-gap: 16px;
+  }
+
+  .teacher-select__label {
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+
+@media screen and (min-width: 1280px) {
 }

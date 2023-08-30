@@ -44,6 +44,15 @@
   color: var(--secondary-text-color);
 }
 
+/* --Media queries--------------- */
+
+@media screen and (max-width: 767.98px) {
+  .contact-form__submit {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
 @media screen and (min-width: 375px) {
 }
 

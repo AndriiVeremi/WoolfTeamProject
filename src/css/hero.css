@@ -8,7 +8,7 @@
     padding-right: 20px;
     border-radius: 16px; /* TO DO: replace with var */ 
     max-width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 80px;
 
     max-width: 335px;
 
@@ -34,6 +34,7 @@
         padding-bottom: 295px;
         padding-left: 32px;
         padding-right: 32px;
+        margin-bottom: 100px;
         border-radius: var(--default-border-radius);
         background-image:
                 url('../img/hero/hero-tablet.jpg');
@@ -52,6 +53,7 @@
     .hero {
         max-width: 1152px;
         padding: 164px 64px;
+        margin-bottom: 96px;
         background-image:
                 url('../img/hero/hero-desktop.jpg');
     }
@@ -67,7 +69,7 @@
 
 .hero-title {
     margin-bottom: 40px;
-    color: #FFFFFF;
+    color: #fff;
         font-size: 38px;
         line-height: 1.05;
         letter-spacing: 0em;

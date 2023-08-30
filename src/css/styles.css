@@ -1,21 +1,26 @@
 @import url('./base.css');
 @import url('./reset.css');
 @import url('./header.css');
+@import url('./common/index.css');
 @import url('./ourLessons.css');
 @import url('./reviews.css');
 
+@import url('./application/index.css');
+@import url('./footer.css');
+
 :root {
+ /* main
   /*Breakpoints*/
   --mobile: 375px;
   --tablet: 768px;
   --desktop: 1280px;
   /* Colors */
-  --accent: #4DC274;
-  --accent-hovered: #38AE5F;
+  --white: #fff;
+  --accent: #4dc274;
+  --accent-hovered: #38ae5f;
   --primary-text-color: #121417;
   --secondary-text-color: rgba(18, 20, 23, 0.5);
   /* Radii */
   --default-border-radius: 30px;
   /* Transition */
-  --default-transition-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+

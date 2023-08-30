@@ -1,0 +1,17 @@
+.temp-button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.56;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 12px;
+  background-color: var(--accent);
+
+  transition: background-color 250ms ease-in-out;
+}
+
+.temp-button:hover,
+.temp-button:active {
+  background-color: var(--accent-hovered);
+}

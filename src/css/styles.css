@@ -1,12 +1,10 @@
 @import url('./base.css');
+@import url('./common/index.css');
 @import url('./reset.css');
-
-@import url('./hero.css');
 
 @import url('./header.css');
 @import url('./hero.css');
 @import url('./about-us.css');
-@import url('./common/index.css');
 @import url('./ourLessons.css');
 @import url('./power-of-english.css');
 
@@ -26,6 +24,7 @@
   /* Colors */
   --white: #fff;
   --accent: #4dc274;
+  --secondary-accent-color: #bee8cc;
   --accent-hovered: #38ae5f;
   --primary-text-color: #121417;
   --secondary-text-color: rgba(18, 20, 23, 0.5);

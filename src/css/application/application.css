@@ -31,9 +31,24 @@
 }
 
 .application__promo {
-  flex-shrink: 0;
-  width: 492px;
+  /* flex-shrink: 0; */
+  /* width: 492px; */
 }
 
 .application__form {
+}
+
+/* --Media queries--------------- */
+
+@media screen and (min-width: 375px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1280px) {
+  .application__promo {
+    flex-shrink: 0;
+    width: 492px;
+  }
 }

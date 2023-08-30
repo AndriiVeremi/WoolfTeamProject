@@ -1,14 +1,5 @@
 .promo {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: flex-end; */
-  justify-content: space-between;
-  overflow: hidden;
-
-  padding: 0 0 40px;
-  background-color: var(--accent);
-  border-radius: var(--default-border-radius);
+  display: none;
 }
 
 .promo__thumb {
@@ -60,4 +51,23 @@
 .promo__text {
   text-align: center;
   color: rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (min-width: 375px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1280px) {
+  .promo {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 0 0 40px;
+    background-color: var(--accent);
+    border-radius: var(--default-border-radius);
+  }
 }

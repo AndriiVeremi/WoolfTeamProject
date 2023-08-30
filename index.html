@@ -17,12 +17,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/WoolfTeamProject/assets/index-3e72e56e.js"></script>
-    <link rel="stylesheet" href="/WoolfTeamProject/assets/index-37eea09a.css">
+    <script type="module" crossorigin src="/WoolfTeamProject/assets/index-47deeabe.js"></script>
+    <link rel="stylesheet" href="/WoolfTeamProject/assets/index-dd60c3ef.css">
   </head>
 
   <body>
-
     <!DOCTYPE html>
 <html lang="en">
 
@@ -253,10 +252,10 @@
   </div>
 </section>
 
-    <section class="temp-section">
-  <div class="temp-container">
+    <section id="application" class="section">
+  <div class="container">
     <div class="application">
-      <h2 class="application__title">Leave an application</h2>
+      <h2 class="application__title">Leave an <span class="underline">application</span></h2>
       <p class="application__text">
         Please use the form below to contact us. Enter your name, email, and message and we'll get
         back to you shortly.
@@ -273,59 +272,66 @@
             </p>
           </div>
         </div>
-        <form class="contact-form application__form">
+
+        <form class="contact-form application__form js-contact-form">
           <h3 hidden>Contact form</h3>
           <div class="contact-form__fields">
-            <div class="contact-form__field-wrapper">
+            <div class="field-wrapper contact-form__field-wrapper">
               <input
                 id="contact-name"
-                class="contact-form__field js-required-field"
+                class="field js-required-field"
                 type="text"
                 placeholder="Name"
                 required
+                pattern="^[a-zA-Zа-яА-Я]+(([' \-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+                title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
               />
-              <label class="contact-form__label" for="contact-name">Name</label>
-              <span class="contact-form__error-icon">!</span>
+              <label class="label" for="contact-name">Name</label>
+              <span class="error-icon">!</span>
             </div>
 
-            <div class="contact-form__field-wrapper">
+            <div class="field-wrapper contact-form__field-wrapper">
               <input
                 id="contact-email"
-                class="contact-form__field js-required-field"
+                class="field js-required-field"
                 type="email"
                 placeholder="Email"
                 required
+                pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
+                title="Email must have valid value"
               />
-              <label class="contact-form__label" for="contact-email">Email</label>
-              <span class="contact-form__error-icon">!</span>
+              <label class="label" for="contact-email">Email</label>
+              <span class="error-icon">!</span>
             </div>
 
-            <div class="contact-form__field-wrapper">
+            <div class="field-wrapper contact-form__field-wrapper">
               <input
                 id="contact-tel"
-                class="contact-form__field js-required-field"
+                class="field js-required-field"
                 type="tel"
                 placeholder="Phone"
                 required
+                pattern="\+?\d{1,4}?[\-.\s]?\(?\d{1,3}?\)?[\-.\s]?\d{1,4}[\-.\s]?\d{1,4}[\-.\s]?\d{1,9}"
+                title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
               />
-              <label class="contact-form__label" for="contact-tel">Phone</label>
-              <span class="contact-form__error-icon">!</span>
+              <label class="label" for="contact-tel">Phone</label>
+              <span class="error-icon">!</span>
             </div>
 
-            <div class="contact-form__field-wrapper">
+            <div class="field-wrapper contact-form__field-wrapper">
               <textarea
                 id="contact-comment"
-                class="contact-form__field contact-form__field--area"
+                class="field field--area contact-form__area"
                 placeholder="Comment"
               ></textarea>
-              <label class="contact-form__label" for="contact-comment">Comment</label>
+              <label class="label" for="contact-comment">Comment</label>
             </div>
           </div>
 
           <div class="contact-form__teachers">
             <h4 class="contact-form__subtitle">Choose a teacher</h4>
             <div class="contact-form__select-group teacher-select js-contact-radio-select">
-              <label class="teacher-select__label">
+              <label class="teacher-select__label js-radio-label">
                 Maria
                 <input
                   class="radio-input js-contact-radio"
@@ -335,7 +341,7 @@
                 />
                 <span class="radio" tabindex="0"></span>
               </label>
-              <label class="teacher-select__label">
+              <label class="teacher-select__label js-radio-label">
                 Artem
                 <input
                   class="radio-input js-contact-radio"
@@ -345,7 +351,7 @@
                 />
                 <span class="radio" tabindex="0"></span>
               </label>
-              <label class="teacher-select__label">
+              <label class="teacher-select__label js-radio-label">
                 Ilona
                 <input
                   class="radio-input js-contact-radio"
@@ -355,7 +361,7 @@
                 />
                 <span class="radio" tabindex="0"></span>
               </label>
-              <label class="teacher-select__label">
+              <label class="teacher-select__label js-radio-label">
                 Volodymyr
                 <input
                   class="radio-input js-contact-radio"
@@ -372,7 +378,7 @@
             type="submit"
             disabled
           >
-            Send
+            <span class="button-text">Send</span>
           </button>
           <p class="contact-form__policy">
             By clicking on “Send” button, you agree to our Privacy Policy, and allow Promodo to use
@@ -383,6 +389,7 @@
     </div>
   </div>
 </section>
+
 
     <footer class="footer-page">
   <div class="container">

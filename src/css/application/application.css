@@ -19,22 +19,6 @@
   color: var(--secondary-text-color);
 }
 
-.application__form-wrapper {
-  /* width: 1024px;
-  margin: 0 auto;
-  display: flex;
-  column-gap: 32px; */
-}
-
-.application__promo {
-  /* flex-shrink: 0; */
-  /* width: 492px; */
-}
-
-.application__form {
-  /* width: 500px; */
-}
-
 /* --Media queries--------------- */
 
 @media screen and (max-width: 767.98px) {

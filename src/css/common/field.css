@@ -19,7 +19,7 @@
 
 .field::placeholder {
   color: var(--primary-text-color);
-  transition: opacity 1s ease-in;
+  transition: opacity 1s var(--default-transition-function);
   opacity: 0;
 }
 
@@ -39,7 +39,7 @@
   transform: translateY(15px);
   font-size: 14px;
   background-color: #ffffff;
-  transition: transform 250ms ease-in;
+  transition: transform 250ms var(--default-transition-function);
 }
 
 .error-icon {
@@ -77,7 +77,7 @@
   display: block;
   font-size: 12px;
   color: var(--secondary-text-color);
-  transition: transform 250ms ease-in;
+  transition: transform 250ms var(--default-transition-function);
   transform: translateY(-10px);
 }
 

@@ -3,7 +3,7 @@
 @import url('./header.css');
 @import url('./common/index.css');
 @import url('./ourLessons.css');
-@import url('./about-us.css');
+
 @import url('./application/index.css');
 @import url('./footer.css');
 
@@ -22,8 +22,4 @@
   /* Radii */
   --default-border-radius: 30px;
   /* Transition */
-
-  --default-transition-function: cubic-bezier(0.4, 0, 0.2, 1); 
-}
-
 

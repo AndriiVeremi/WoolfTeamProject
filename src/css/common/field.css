@@ -1,0 +1,100 @@
+.field-wrapper {
+  position: relative;
+}
+
+.field {
+  display: block;
+  width: 100%;
+  padding: 16px 18px;
+  font-size: 14px;
+  line-height: 1.28;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  border-radius: 12px;
+}
+
+.field--area {
+  resize: none;
+  overflow-y: auto;
+}
+
+.field::placeholder {
+  color: var(--primary-text-color);
+  transition: opacity 1s ease-in;
+  opacity: 0;
+}
+
+.field:focus,
+.field:focus-visible {
+  outline: 1px solid var(--accent);
+}
+
+.field.required:invalid {
+  outline: 1px solid #ee323d;
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  left: 18px;
+  transform: translateY(15px);
+  font-size: 14px;
+  background-color: #ffffff;
+  transition: transform 250ms ease-in;
+}
+
+.error-icon {
+  display: none;
+}
+
+.field.required:invalid ~ .error-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ee323d;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 23px;
+  height: 23px;
+  transform: translateY(-50%);
+  border: 2px solid #ee323d;
+  border-radius: 50%;
+}
+
+.field.required:not(:placeholder-shown):not(:focus):invalid ~ .label,
+.field.required:invalid ~ .label,
+.field.required:focus:invalid ~ .label,
+.field.required:focus-visible:invalid ~ .label {
+  color: #ee323d;
+}
+
+.field:focus ~ .label,
+.field:focus-visible ~ .label,
+.field:not(:placeholder-shown):not(:focus) ~ .label,
+.field:not(:placeholder-shown):not(:focus-visible) ~ .label {
+  padding: 0 5px;
+  display: block;
+  font-size: 12px;
+  color: var(--secondary-text-color);
+  transition: transform 250ms ease-in;
+  transform: translateY(-10px);
+}
+
+@media screen and (min-width: 375px) {
+}
+
+@media screen and (min-width: 768px) {
+  .field {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .label {
+    transform: translateY(17px);
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+}

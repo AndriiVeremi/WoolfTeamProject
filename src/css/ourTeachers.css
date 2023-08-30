@@ -1,0 +1,117 @@
+.ourTeachers {
+  margin-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .ourTeachers {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .ourTeachers {
+    margin-bottom: 150px;
+  }
+}
+
+.section-headline {
+  color: var(--primary-text-color);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.13;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-headline {
+    color: var(--primary-text-color);
+    font-size: 40px;
+    line-height: 1.2;
+  }
+}
+
+.underline {
+  position: relative;
+}
+
+.teachers-subtitle {
+  width: 334px;
+  margin: 0 auto;
+  color: var(--secondary-text-color);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.71;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .teachers-subtitle {
+    width: 709px;
+    font-size: 18px;
+    line-height: 1.67;
+    margin-bottom: 64px;
+  }
+}
+
+.teachers-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.teachers-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  height: 269px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .tachers-item {
+    height: 318px;
+    margin-bottom: 32px;
+  }
+}
+
+.teachers-name {
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 1.71;
+  text-align: center;
+}
+
+.teachers-about {
+  margin-bottom: 40px;
+  width: 335px;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: rgba(18, 20, 23, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  .teachers-about {
+    width: 272px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .teachers-about {
+    width: 232px;
+  }
+}
+
+.teachers-image {
+  width: 150px;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}

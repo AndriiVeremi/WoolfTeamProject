@@ -17,7 +17,7 @@
 @import url('./footer.css');
 
 :root {
- /* main
+  /* main
   /*Breakpoints*/
   --mobile: 375px;
   --tablet: 768px;

@@ -1,6 +1,10 @@
+.ourLessons {
+    margin-bottom: 150px;
+  }
+
 .ourLessons-subtitle {
     display: block;
-    width: 665px;
+    width: 335px;
     margin: 0 auto;
     color: rgba(18, 20, 23, 0.50);
     text-align: center;
@@ -10,22 +14,74 @@
     font-weight: 400;
     line-height: 1.6;
     margin-bottom: 64px;
+    margin-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .ourLessons-subtitle {
+        width: 668px;
+    }
 }
 
 .ourLessons-list {
     display: flex;
-    gap: 32px;
+    flex-direction: column;
+    gap: 20px;
     align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+    .ourLessons-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .ourLessons-list {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+    }
+}
+
 .ourLessons-item {
-    width: 320px;
-    height: 404px;
-    padding: 32px;
+    width: 336px;
+    height: 400px;
+    padding: 21px 40px;
     border-radius: 30px;
     border: 1px solid #4DC274;
     background: #FFF;
+    transition: scale 700ms ease-in-out;
 }
+
+.ourLessons-item:hover {
+    scale: 1.05;
+}
+
+@media screen and (min-width: 768px) {
+    .ourLessons-item {
+        height: 404px;
+        padding: 16px 32px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .ourLessons-item {
+        width: 320px;
+        padding: 32px;
+    }
+}
+
+.ourLessons-item:not(:nth-child(odd)) {
+    border: 1px solid #fff;
+    background: #4DC274;
+}
+
+
 
 .ourLessons-step {
     color: #121417;
@@ -62,18 +118,35 @@
     margin-bottom: 32px;
 }
 
+.color {
+    color: #fff;
+}
+
 .ourLessons-btn {
     display: block;
     margin: 0 auto;
     padding: 16px 39px;
     border-radius: 12px;
-    background: #4DC274;
-    border: 1px solid #4DC274;
+    background: #4dc274;
+    border: 1px solid #4dc274;
 
     color: #FFF;
     font-family: Manrope;
-    /* font-size: 18px; */
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 1.5;
+    transition: background-color 250ms ease-in-out;
+}
+
+.ourLessons-btn:hover {
+    background-color: #38ae5f;
+}
+
+.ourLessons-btn:active {
+    scale: 0.95;
+}
+
+.btn-color {
+    border-color: #FFF;
 }

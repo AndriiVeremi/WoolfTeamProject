@@ -3,15 +3,18 @@
 @import url('./header.css');
 @import url('./common/index.css');
 @import url('./ourLessons.css');
+@import url('./about-us.css');
 @import url('./application/index.css');
 @import url('./footer.css');
 
 :root {
+ /* main
   /*Breakpoints*/
   --mobile: 375px;
   --tablet: 768px;
   --desktop: 1280px;
   /* Colors */
+  --white: #fff;
   --accent: #4dc274;
   --accent-hovered: #38ae5f;
   --primary-text-color: #121417;
@@ -19,5 +22,8 @@
   /* Radii */
   --default-border-radius: 30px;
   /* Transition */
-  --default-transition-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --default-transition-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
+
+

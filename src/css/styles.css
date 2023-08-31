@@ -5,6 +5,7 @@
 
 @import url('./hero.css');
 @import url('./header.css');
+@import url('./mobile-menu.css');
 @import url('./about-us.css');
 @import url('./ourLessons.css');
 @import url('./power-of-english.css');
@@ -13,6 +14,7 @@
 @import url('./footer.css');
 
 @import url('./privacy.css');
+
 
 /* @import url('./ourTeachers.css'); */
 
@@ -29,6 +31,7 @@
   --accent-hovered: #38ae5f;
   --primary-text-color: #121417;
   --secondary-text-color: rgba(18, 20, 23, 0.5);
+  --white-opacity-color: rgba(255, 255, 255, 0.1);
   /* Radii */
   --default-border-radius: 30px;
   /* Transition */

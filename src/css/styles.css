@@ -1,19 +1,24 @@
 @import url('./base.css');
 @import url('./common/index.css');
 @import url('./reset.css');
+@import url('./common/index.css');
+@import url('./application/index.css');
+
+
+
+@import url('./hero.css');
 
 @import url('./header.css');
-@import url('./hero.css');
 @import url('./about-us.css');
 @import url('./ourLessons.css');
+
 @import url('./power-of-english.css');
+
+@import url('./reviews.css');
+@import url('./footer.css');
 
 /* @import url('./ourTeachers.css'); */
 
-@import url('./reviews.css');
-
-@import url('./application/index.css');
-@import url('./footer.css');
 
 :root {
   /* main

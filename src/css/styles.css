@@ -4,8 +4,6 @@
 @import url('./common/index.css');
 @import url('./application/index.css');
 
-
-
 @import url('./hero.css');
 
 @import url('./header.css');
@@ -13,14 +11,14 @@
 @import url('./about-us.css');
 @import url('./ourLessons.css');
 
+@import url('./power-of-english.css');
+
 @import url('./reviews.css');
 @import url('./footer.css');
 
 @import url('./privacy.css');
 
-
 /* @import url('./ourTeachers.css'); */
-
 
 :root {
   /* main

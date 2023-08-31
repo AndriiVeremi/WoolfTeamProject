@@ -1,5 +1,5 @@
 .about {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .section-headline {
@@ -31,7 +31,6 @@
 }
 
 .description-text {
-  width: 334px;
   color: var(--secondary-text-color);
   text-align: center;
   font-size: 14px;
@@ -87,7 +86,7 @@
     width: 768px;
   }
   .about {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
   .section-headline {
     color: var(--primary-text-color);
@@ -121,7 +120,7 @@
     padding: 0 64px;
   }
   .about {
-    margin-bottom: 150px;
+    padding-bottom: 150px;
   }
   .benefit-container {
     display: flex;
@@ -138,6 +137,9 @@
   .benefit-list {
     flex-basis: 67%;
     margin-bottom: unset;
+  }
+  .underline::after {
+    height: 20px;
   }
   .bg-image-about {
     flex-basis: 33%;

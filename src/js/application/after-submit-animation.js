@@ -8,5 +8,6 @@ form.addEventListener('submit', e => {
 
   setTimeout(() => {
     submitBtn.classList.remove('spinner');
+    form.submit();
   }, 2000);
 });

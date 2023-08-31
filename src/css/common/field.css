@@ -49,18 +49,11 @@
 
 .field.required:invalid ~ .error-icon {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ee323d;
-  font-weight: 700;
+  fill: #ee323d;
   position: absolute;
   top: 50%;
   right: 20px;
-  width: 23px;
-  height: 23px;
   transform: translateY(-50%);
-  border: 2px solid #ee323d;
-  border-radius: 50%;
 }
 
 .field.required:not(:placeholder-shown):not(:focus):invalid ~ .label,

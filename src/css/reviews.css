@@ -1,5 +1,4 @@
  .reviews{
-  padding-top: 80px;
   padding-bottom: 80px;
  }
 .reviews .container{
@@ -20,22 +19,7 @@
    
    color: var(--primary-text-color);
 }
-.reviews .underline {
-  position: relative;
-}
-.reviews .underline::after {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 27px;
-  z-index: -1;
-  width: 100%;
-  height: 35%;
-  content: '';
 
-  border-radius: 8px;
-  background: #BEE8CC;
-}
 .reviews .text{
   margin-bottom: 40px;
 
@@ -56,10 +40,8 @@
 }
 .reviews .item{
   width: 100%;
-  height: 100%;
-  max-width: 335px;
-  min-height: 278px;
-
+  height: 278px;
+  
   padding:20px 20px 40px 20px;
   border-radius: 16px;
   background-color: #F3F5F6;
@@ -107,7 +89,7 @@
   display: block;
   max-width: 267px;
   margin: 0 auto;
-  
+   
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -117,7 +99,6 @@
  
  @media screen and (min-width: 768px) {
 .reviews{
-  padding-top: 100px;
   padding-bottom: 100px;
  }
 
@@ -142,11 +123,13 @@
 
 .reviews .list{
   flex-direction: row;
+  align-items: baseline;
+  justify-content: left;
   flex-wrap: wrap;
 }
 .reviews .item{
   max-width: 336px;
-  min-height: 326px;
+  height: 326px;
   padding:32px 16px 40px 16px;
 
   border-radius: 30px;
@@ -170,7 +153,6 @@
   
 @media screen and (min-width: 1280px) {
 .reviews{
-  padding-top: 150px;
   padding-bottom: 150px;
  }
 
@@ -180,9 +162,9 @@
 }
 .reviews .item{
   width: 320px;
-  min-height: 326px;
+  height: 326px;
   padding:32px 16px 40px 16px;
-
+ 
   border-radius: 30px;
   background-color: #F3F5F6;
 }
@@ -192,7 +174,7 @@
 .reviews .user-feedback{
   display: block;
   max-width: 256px;
-  
+   
   font-size: 16px;
   line-height:1.5; 
 }

@@ -14,7 +14,7 @@
   }
 }
 
-.section-headline {
+.ourTeachers .section-headline {
   color: var(--primary-text-color);
   text-align: center;
   font-family: Manrope;
@@ -26,19 +26,18 @@
 }
 
 @media screen and (min-width: 768px) {
-  .section-headline {
+  .ourTeachers .section-headline {
     color: var(--primary-text-color);
     font-size: 40px;
     line-height: 1.2;
   }
 }
 
-.underline {
+.ourTeachers .underline {
   position: relative;
 }
 
 .teachers-subtitle {
-  width: 334px;
   margin: 0 auto;
   color: var(--secondary-text-color);
   text-align: center;
@@ -49,34 +48,43 @@
 
 @media screen and (min-width: 768px) {
   .teachers-subtitle {
-    width: 709px;
     font-size: 18px;
     line-height: 1.67;
     margin-bottom: 64px;
   }
 }
 
-.teachers-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
+@media screen and (min-width: 1280px) {
+  .teachers-subtitle {
+    width: 709px;
+  }
 }
 
 .teachers-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  height: 269px;
   margin-bottom: 40px;
 }
 
+.teachers-item:last-child {
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 768px) {
-  .tachers-item {
-    height: 318px;
-    margin-bottom: 32px;
+  .teachers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .teachers-item {
+    margin-bottom: 0;
+    width: 272px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .teachers-item {
+    width: 232px;
   }
 }
 
@@ -88,8 +96,6 @@
 }
 
 .teachers-about {
-  margin-bottom: 40px;
-  width: 335px;
   font-size: 14px;
   line-height: 1.71;
   text-align: center;
@@ -98,14 +104,7 @@
 
 @media screen and (min-width: 768px) {
   .teachers-about {
-    width: 272px;
     font-size: 16px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .teachers-about {
-    width: 232px;
   }
 }
 

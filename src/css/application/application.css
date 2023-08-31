@@ -43,6 +43,15 @@
     line-height: 1.2;
   }
 
+  .application__title > .underline {
+    display: inline-block;
+  }
+  .application__title > .underline::after {
+    height: 20px;
+    top: auto;
+    bottom: 0;
+  }
+
   .application__text {
     margin: 0 auto;
     max-width: 580px;

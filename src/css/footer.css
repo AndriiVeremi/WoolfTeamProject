@@ -76,7 +76,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: #ffffff;
+  fill: var(--white);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   gap: 12px;

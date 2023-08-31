@@ -40,7 +40,8 @@
 }
 .reviews .item{
   width: 100%;
-  height: 278px;
+  height: 100%;
+  min-height: 278px;
   
   padding:20px 20px 40px 20px;
   border-radius: 16px;
@@ -129,7 +130,7 @@
 }
 .reviews .item{
   max-width: 336px;
-  height: 326px;
+  min-height: 326px;
   padding:32px 16px 40px 16px;
 
   border-radius: 30px;
@@ -162,7 +163,7 @@
 }
 .reviews .item{
   width: 320px;
-  height: 326px;
+  min-height: 326px;
   padding:32px 16px 40px 16px;
  
   border-radius: 30px;

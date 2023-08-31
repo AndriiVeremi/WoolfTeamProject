@@ -43,6 +43,7 @@
 @media screen and (min-width: 1280px) {
     .ourLessons-list {
         display: flex;
+        justify-content: center;
         gap: 32px;
         align-items: center;
     }

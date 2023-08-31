@@ -37,6 +37,5 @@
   /* Radii */
   --default-border-radius: 30px;
   /* Transition */
-
   --default-transition-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

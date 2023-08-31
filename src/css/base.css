@@ -27,6 +27,7 @@ img {
 
 button {
   color: currentColor;
+  cursor: pointer;
 }
 
 .visually-hidden {

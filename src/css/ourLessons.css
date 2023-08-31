@@ -1,10 +1,9 @@
 .ourLessons {
-    margin-bottom: 150px;
+    padding-bottom: 150px;
   }
 
 .ourLessons-subtitle {
     display: block;
-    width: 335px;
     margin: 0 auto;
     color: rgba(18, 20, 23, 0.50);
     text-align: center;

@@ -87,13 +87,36 @@
 
 .white-card {
   position: relative;
-  z-index: 3;
+  z-index: 999;
   padding: 40px 20px;
   border-radius: 16px;
   background-color: var(--white);
 }
 
-.card {
+.cards-wrapper::before,
+.cards-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 295px;
+  height: 408px;
+  border-radius: 16px;
+}
+
+.cards-wrapper::before {
+  z-index: 5;
+  transform: rotate(-9deg);
+  background-color: var(--secondary-accent-color);
+}
+
+.cards-wrapper::after {
+  z-index: 3;
+  transform: rotate(11deg);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* .card {
   position: absolute;
   top: 0;
   right: 0;
@@ -111,9 +134,9 @@
 
 .light-green-card {
   z-index: 1;
-  transform: rotate(11deg);
+  transform: rotate(7deg);
   background-color: rgba(255, 255, 255, 0.5);
-}
+} */
 
 @media screen and (min-width: 768px) {
   .section-wrapper {
@@ -172,6 +195,7 @@
     height: 263px;
     background-image: url(../img/power-of-english/pack-of-books.png);
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .advantage-item::before {
@@ -192,22 +216,18 @@
     border-radius: 30px;
   }
 
-  .card {
+  /* .card {
     width: 668px;
     height: 500px;
     border-radius: 30px;
-  }
+  } */
+}
 
-  .green-card {
-    width: 668px;
-    height: 500px;
-    transform: rotate(-9.864deg);
-    background-color: #d4fde1;
-  }
-
-  .light-green-card {
-    transform: rotate(10.655deg);
-    background-color: rgba(255, 255, 255, 0.5);
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .books-img-wrapper {
+    background-image: url(../img/power-of-english/pack-of-books@2x.png);
   }
 }
 
@@ -256,15 +276,27 @@
     background-color: var(--white);
   }
 
-  .green-card {
-    width: 1050px;
-    height: 463px;
-    transform: rotateZ(-8deg);
+  .cards-wrapper::before,
+  .cards-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1024px;
+    height: 479px;
+    border-radius: 30px;
   }
 
-  .light-green-card {
-    width: 1011px;
-    height: 402px;
-    transform: rotateZ(11deg);
+  .cards-wrapper::before {
+    transform: rotate(-8deg);
   }
+
+  .cards-wrapper::after {
+    transform: rotate(6.5deg);
+  }
+
+  /* .card {
+    width: 1024px;
+    height: 471px;
+  } */
 }

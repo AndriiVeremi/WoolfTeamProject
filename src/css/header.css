@@ -48,6 +48,7 @@
   font-size: 14px;
   font-weight: 600;
   text-transform: initial;
+  padding: 20px 0;
 }
 
 .navigation-menu::after,

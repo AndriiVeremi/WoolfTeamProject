@@ -1,0 +1,51 @@
+.button-up {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  z-index: 999;
+  background-color: #ffffff;
+  border: 3px solid var(--accent);
+  border-radius: 50%;
+
+  color: var(--accent);
+  transition: border-color 250ms var(--default-transition-function),
+    color 250ms var(--default-transition-function);
+}
+
+.button-up.hidden {
+  display: none;
+}
+
+.button-up:hover,
+.button-up:active {
+  color: var(--accent-hovered);
+  border-color: var(--accent-hovered);
+  /* background-color: #d4fde1; */
+}
+
+.button-up__icon {
+  fill: currentColor;
+  transform: rotate(180deg);
+}
+
+.button-up:hover > .button-up__icon {
+  animation-name: button-up-animation;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes button-up-animation {
+  0% {
+    transform: translateY(-3px) rotate(180deg);
+  }
+
+  100% {
+    transform: translateY(3px) rotate(180deg);
+  }
+}

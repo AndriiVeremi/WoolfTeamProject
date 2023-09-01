@@ -1,5 +1,3 @@
-.teacher-select {
-}
 .teacher-select__label {
   margin-bottom: 8px;
   cursor: pointer;
@@ -17,9 +15,6 @@
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 375px) {
-}
-
 @media screen and (min-width: 768px) {
   .teacher-select {
     display: flex;
@@ -31,7 +26,4 @@
     font-size: 18px;
     line-height: 1.33;
   }
-}
-
-@media screen and (min-width: 1280px) {
 }

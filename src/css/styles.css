@@ -23,6 +23,7 @@
   --mobile: 375px;
   --tablet: 768px;
   --desktop: 1280px;
+
   /* Colors */
   --white: #fff;
   --accent: #4dc274;
@@ -31,8 +32,10 @@
   --primary-text-color: #121417;
   --secondary-text-color: rgba(18, 20, 23, 0.5);
   --white-opacity-color: rgba(255, 255, 255, 0.1);
+
   /* Radii */
   --default-border-radius: 30px;
+
   /* Transition */
   --default-transition-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

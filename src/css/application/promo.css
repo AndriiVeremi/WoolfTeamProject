@@ -6,9 +6,6 @@
   height: 392px;
   overflow: hidden;
   position: relative;
-  /* width: 596px; */
-  /* height: 536px; */
-  /* background-color: blue; */
 }
 
 .promo__thumb::after {
@@ -22,7 +19,6 @@
   left: 50%;
   transform: translateX(-50%);
 
-  /* background-color: tomato; */
   background-image: url('../../img/application/application-bgd-image@1x.jpg');
   background-size: 596px 536px;
 
@@ -41,7 +37,6 @@
 
 .promo__title {
   margin-bottom: 8px;
-
   text-align: center;
   color: #ffffff;
   font-size: 40px;
@@ -51,12 +46,6 @@
 .promo__text {
   text-align: center;
   color: rgba(255, 255, 255, 0.7);
-}
-
-@media screen and (min-width: 375px) {
-}
-
-@media screen and (min-width: 768px) {
 }
 
 @media screen and (min-width: 1280px) {

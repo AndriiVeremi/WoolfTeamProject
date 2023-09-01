@@ -29,7 +29,6 @@
   left: 50%;
   width: 40px;
   height: 40px;
-  /* transform: translate(-50%, -50%); */
 
   background-color: transparent;
   border-radius: 50%;
@@ -40,7 +39,6 @@
   border-left: 3px solid rgba(255, 255, 255, 0.8);
   border-right: 3px solid rgba(255, 255, 255, 0.8);
 
-  /* Aninmation */
   animation-name: spinner-animation;
   animation-duration: 1000ms;
   animation-timing-function: ease-in-out;
@@ -50,8 +48,6 @@
 .submit-button.spinner > .button-text {
   opacity: 0;
 }
-
-/* Keyframes */
 
 @keyframes spinner-animation {
   0% {

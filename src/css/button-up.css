@@ -26,7 +26,6 @@
 .button-up:active {
   color: var(--accent-hovered);
   border-color: var(--accent-hovered);
-  /* background-color: #d4fde1; */
 }
 
 .button-up__icon {

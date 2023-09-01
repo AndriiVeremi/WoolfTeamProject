@@ -18,12 +18,10 @@
 }
 
 @media screen and (max-width: 1279px) {
-  .navigation-menu-item {
-    display: none;
-  }
 
-  .navigation-menu-social-link {
-    display: none;
+  .navigation-menu-item,
+  .navigation-menu-social-item {
+    display: none
   }
 
 }
@@ -41,7 +39,8 @@
   color: var(--primary-text-color);
   font-size: 14px;
   font-weight: 600;
-  text-transform: initial
+  text-transform: initial;
+  transition: 250ms var(--default-transition-function);
 }
 
 .navigation-menu:hover::after,

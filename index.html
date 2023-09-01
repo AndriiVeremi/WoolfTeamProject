@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Woolf Team Project">
+    <meta name="description" content="Woolf Team Project" />
     <link rel="icon" type="image/svg+xml" href="/WoolfTeamProject/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Fonts -->
@@ -12,11 +12,17 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Woolf Team Project</title>
     
-    <script type="module" crossorigin src="/WoolfTeamProject/assets/mobile-menu-8da81695.js"></script>
-    <link rel="stylesheet" href="/WoolfTeamProject/assets/mobile-menu-a83cd684.css">
+    <script type="module" crossorigin src="/WoolfTeamProject/assets/button-up-76e60c9c.js"></script>
+    <link rel="stylesheet" href="/WoolfTeamProject/assets/button-up-a1cc58a9.css">
   </head>
 
   <body>
@@ -308,7 +314,6 @@
         </div>
 
         <form class="contact-form application__form js-contact-form">
-          <h3 hidden>Contact form</h3>
           <div class="contact-form__fields">
             <div class="field-wrapper contact-form__field-wrapper">
               <input
@@ -375,7 +380,7 @@
           </div>
 
           <div class="contact-form__teachers">
-            <h4 class="contact-form__subtitle">Choose a teacher</h4>
+            <h3 class="contact-form__subtitle">Choose a teacher</h3>
             <div class="contact-form__select-group teacher-select js-contact-radio-select">
               <label class="teacher-select__label js-radio-label">
                 Maria
@@ -420,7 +425,7 @@
             </div>
           </div>
           <button
-            class="temp-button contact-form__submit js-contact-form-submit"
+            class="submit-button contact-form__submit js-contact-form-submit"
             type="submit"
             disabled
           >
@@ -605,6 +610,20 @@
     </div>
   </div>
 </footer>
+
+
+    <button class="button-up hidden js-button-up" aria-label="Button up">
+  <svg class="button-up__icon" width="36" height="36">
+    <use href="/WoolfTeamProject/assets/icons-bc4c488d.svg#icon-arrow-icon"></use>
+  </svg>
+</button>
+
+    <div class="tooltip js-tooltip hidden">
+  <p class="tooltip__text">
+    Your application was successfully sent. <br />
+    Thank you!
+  </p>
+</div>
 
 
     

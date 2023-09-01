@@ -57,7 +57,6 @@
   font-size: 14px;
   font-weight: 600;
   text-transform: initial;
-  transition: 250s var(--default-transition-function);
 }
 
 .navigation-menu::after,

@@ -15,6 +15,7 @@
 @import url('./footer.css');
 @import url('./privacy.css');
 @import url('./button-up.css');
+@import url('./tooltip.css');
 
 :root {
   /* main

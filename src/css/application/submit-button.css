@@ -1,4 +1,4 @@
-.temp-button {
+.submit-button {
   cursor: pointer;
   font-size: 18px;
   font-weight: 700;
@@ -12,16 +12,16 @@
   transition: background-color 250ms var(--default-transition-function);
 }
 
-.temp-button:hover,
-.temp-button:active {
+.submit-button:hover,
+.submit-button:active {
   background-color: var(--accent-hovered);
 }
 
-.temp-button.spinner {
+.submit-button.spinner {
   position: relative;
 }
 
-.temp-button.spinner::after {
+.submit-button.spinner::after {
   content: '';
   position: absolute;
   display: block;
@@ -47,7 +47,7 @@
   animation-iteration-count: infinite;
 }
 
-.temp-button.spinner > .button-text {
+.submit-button.spinner > .button-text {
   opacity: 0;
 }
 

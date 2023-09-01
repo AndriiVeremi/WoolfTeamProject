@@ -34,15 +34,6 @@
   }
 }
 
-/*@media screen and (min-width: 375px) and (max-width: 1279px) {
-  .header-desktop-items {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
-  }
-}*/
-
 .navigation-list {
   display: flex;
   flex-direction: row;
@@ -106,8 +97,6 @@
   border: 1px solid rgba(18, 20, 23, 0.10);
 
 }
-
-
 
 .navigation-menu-social-link:hover,
 .navigation-menu-social-link:focus {

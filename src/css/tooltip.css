@@ -1,0 +1,32 @@
+.tooltip {
+  padding: 30px 15px;
+  position: fixed;
+  z-index: 999;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--accent-hovered);
+  border-radius: 12px;
+}
+
+.tooltip.hidden {
+  display: none;
+}
+
+.tooltip__text {
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767.98px) {
+  .tooltip__text {
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tooltip__text {
+    font-size: 24px;
+  }
+}

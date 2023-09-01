@@ -1,4 +1,5 @@
 .section-wrapper {
+  overflow: hidden;
   padding: 40px 20px 64px 20px;
   border-radius: 16px;
   background-image: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
@@ -120,6 +121,7 @@
   }
 
   .section-wrapper {
+    overflow: visible;
     padding: 64px 18px 93px 18px;
     border-radius: 30px;
   }

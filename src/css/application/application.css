@@ -19,15 +19,10 @@
   color: var(--secondary-text-color);
 }
 
-/* --Media queries--------------- */
-
 @media screen and (max-width: 767.98px) {
   .application__title > .underline::after {
     display: none;
   }
-}
-
-@media screen and (min-width: 375px) {
 }
 
 @media screen and (min-width: 768px) {
@@ -63,7 +58,6 @@
 
 @media screen and (min-width: 1280px) {
   .application__form-wrapper {
-    /* width: 1024px; */
     display: flex;
     justify-content: center;
     column-gap: 32px;

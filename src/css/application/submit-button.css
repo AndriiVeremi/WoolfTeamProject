@@ -1,4 +1,4 @@
-.temp-button {
+.submit-button {
   cursor: pointer;
   font-size: 18px;
   font-weight: 700;
@@ -12,16 +12,16 @@
   transition: background-color 250ms var(--default-transition-function);
 }
 
-.temp-button:hover,
-.temp-button:active {
+.submit-button:hover,
+.submit-button:active {
   background-color: var(--accent-hovered);
 }
 
-.temp-button.spinner {
+.submit-button.spinner {
   position: relative;
 }
 
-.temp-button.spinner::after {
+.submit-button.spinner::after {
   content: '';
   position: absolute;
   display: block;
@@ -29,7 +29,6 @@
   left: 50%;
   width: 40px;
   height: 40px;
-  /* transform: translate(-50%, -50%); */
 
   background-color: transparent;
   border-radius: 50%;
@@ -40,18 +39,15 @@
   border-left: 3px solid rgba(255, 255, 255, 0.8);
   border-right: 3px solid rgba(255, 255, 255, 0.8);
 
-  /* Aninmation */
   animation-name: spinner-animation;
   animation-duration: 1000ms;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 
-.temp-button.spinner > .button-text {
+.submit-button.spinner > .button-text {
   opacity: 0;
 }
-
-/* Keyframes */
 
 @keyframes spinner-animation {
   0% {

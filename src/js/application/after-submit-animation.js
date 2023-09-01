@@ -1,6 +1,16 @@
 const form = document.querySelector('form.js-contact-form');
 const submitBtn = document.querySelector('.js-contact-form-submit');
 
+const tooltip = document.querySelector('.js-tooltip');
+
+const actionBeforeSubmit = () => {
+  tooltip.classList.toggle('hidden', false);
+  setTimeout(() => {
+    tooltip.classList.toggle('hidden', true);
+    form.submit();
+  }, 2000);
+};
+
 form.addEventListener('submit', e => {
   e.preventDefault();
 
@@ -8,6 +18,6 @@ form.addEventListener('submit', e => {
 
   setTimeout(() => {
     submitBtn.classList.remove('spinner');
-    form.submit();
+    actionBeforeSubmit();
   }, 2000);
 });

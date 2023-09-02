@@ -1,6 +1,5 @@
 .header {
   padding: 20px 0;
-
 }
 
 .nav {
@@ -27,10 +26,6 @@
   .header-desktop-items {
     padding: 0;
     margin: 16;
-  }
-
-  .logo-first-word-header {
-    padding: 24px 0 24px 0;
   }
 }
 
@@ -78,7 +73,6 @@
 
 .logo-second-word-header {
   color: var(--accent);
-
 }
 
 .navigation-menu-social-list {
@@ -96,7 +90,6 @@
   gap: 8px;
   border-radius: 10px;
   border: 1px solid rgba(18, 20, 23, 0.10);
-
 }
 
 .navigation-menu-social-link:hover,

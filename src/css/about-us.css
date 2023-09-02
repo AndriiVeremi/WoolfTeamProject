@@ -75,6 +75,7 @@
 .bg-image-about {
   background-image: url(../img/bg-about.png/memoji.png);
   background-position: center;
+  background-repeat: no-repeat;
   background-color: var(--accent);
   border-radius: 16px;
   height: 313px;

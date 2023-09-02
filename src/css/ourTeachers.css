@@ -113,4 +113,9 @@
   margin-bottom: 16px;
   margin-left: auto;
   margin-right: auto;
+  transition: scale 300ms ease-in-out;
+}
+
+.teachers-item:hover .teachers-image {
+  scale: 1.07
 }

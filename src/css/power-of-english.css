@@ -45,6 +45,10 @@
   background-color: var(--accent-hovered);
 }
 
+.section-bnt:active {
+  scale: 0.95;
+}
+
 .advantage-list {
   display: flex;
   flex-direction: column;

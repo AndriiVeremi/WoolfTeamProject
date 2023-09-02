@@ -62,6 +62,7 @@
 
 .teachers-item {
   margin-bottom: 40px;
+  cursor: pointer;
 }
 
 .teachers-item:last-child {
@@ -117,5 +118,5 @@
 }
 
 .teachers-item:hover .teachers-image {
-  scale: 1.07
+  scale: 1.07;
 }

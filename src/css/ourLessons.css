@@ -48,11 +48,11 @@
     border-radius: 30px;
     border: 1px solid var(--accent);
     background: var(--white);
-    transition: scale 700ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out;
 }
 
 .ourLessons-item:hover {
-    scale: 1.05;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
 }
 
 @media screen and (min-width: 768px) {
@@ -71,7 +71,6 @@
 }
 
 .ourLessons-item:not(:nth-child(odd)) {
-    border: 1px solid var(--white);
     background: var(--accent);
 }
 

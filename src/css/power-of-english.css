@@ -37,12 +37,16 @@
   color: var(--white);
   border-radius: 12px;
   background-color: var(--accent);
-  transition: background-color 250ms var(--default-transition-functio);
+  transition: background-color 250ms var(--default-transition-function);
 }
 
 .section-bnt:hover,
 .section-bnt:focus {
   background-color: var(--accent-hovered);
+}
+
+.section-bnt:active {
+  scale: 0.95;
 }
 
 .advantage-list {

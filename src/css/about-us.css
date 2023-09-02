@@ -74,11 +74,17 @@
 
 .bg-image-about {
   background-image: url(../img/bg-about.png/memoji.png);
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-color: var(--accent);
   border-radius: 16px;
   height: 313px;
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx), (min-device-pixel-ratio: 2) {
+  .bg-image-about {
+    background-image: url(../img/bg-about.png/memoji@2x.png);
+  }
 }
 
 @media screen and (min-width: 768px) {

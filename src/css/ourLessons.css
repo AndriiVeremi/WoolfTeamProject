@@ -48,7 +48,7 @@
     border-radius: 30px;
     border: 1px solid var(--accent);
     background: var(--white);
-    transition: scale 700ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out;
 }
 
 .ourLessons-item:hover {

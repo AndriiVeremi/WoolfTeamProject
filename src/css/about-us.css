@@ -81,6 +81,12 @@
   height: 313px;
 }
 
+@media screen and (min-width: 768px) {
+  .bg-image-about {
+    height: 243px;
+  }
+}
+
 @media screen and (min-width: 375px) and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) and (min-width: 375px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 375px) {

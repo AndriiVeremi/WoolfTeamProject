@@ -278,10 +278,6 @@
     column-gap: 16px;
   }
 
-  .advantage-item:not(:last-child) {
-    margin-bottom: 18px;
-  }
-
   .books-img-wrapper {
     position: relative;
     bottom: 16px;

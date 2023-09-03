@@ -73,110 +73,93 @@
 }
 
 .bg-image-about {
-  background-image: url(../img/bg-about.png/memoji.png);
+  height: 335px;
+  border-radius: 16px;
+  background-color: var(--accent);
+  background-size: 225px;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: var(--accent);
-  border-radius: 16px;
-  height: 313px;
-}
-
-@media screen and (min-width: 768px) {
-  .bg-image-about {
-    height: 243px;
-  }
+  background-image: url(../img/bg-about.png/memoji.png);
 }
 
 @media screen and (min-width: 375px) and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) and (min-width: 375px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 375px) {
   .bg-image-about {
-    background-size: 225px;
-    background-image: url(../img/bg-about.png/memoji@2x.png);
-  }
-}
-
-@media screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px),
-  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
-  .bg-image-about {
-    background-size: 225px;
-    height: 243px;
-    background-image: url(../img/bg-about.png/memoji@2x.png);
-  }
-}
-
-@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
-  screen and (min-resolution: 2dppx) and (min-width: 1280px),
-  screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
-  .bg-image-about {
-    background-size: 225px;
     background-image: url(../img/bg-about.png/memoji@2x.png);
   }
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
   .about {
     padding-bottom: 100px;
   }
+
   .section-headline {
     color: var(--primary-text-color);
     font-size: 40px;
     line-height: 1.2;
   }
+
   .underline::after {
     height: 16px;
     top: 30px;
   }
+
   .description-text {
     font-size: 18px;
     line-height: 1.67;
     width: unset;
     margin-bottom: 64px;
   }
+
   .benefit-list {
     flex-direction: unset;
     flex-wrap: wrap;
     gap: 32px;
     margin-bottom: 32px;
   }
+
   .benefit-item {
     width: calc((100% - 32px) / 2);
+  }
+
+  .bg-image-about {
+    height: 243px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
-    width: 1280px;
-    padding: 0 64px;
-  }
   .about {
     padding-bottom: 150px;
   }
+
   .benefit-container {
     width: 1024px;
     margin: 0 auto;
     display: flex;
     gap: 32px;
   }
+
   .description-text {
     width: 658px;
     margin-left: auto;
     margin-right: auto;
   }
+
   .benefit-item {
     height: 160px;
   }
+
   .benefit-list {
     flex-basis: 67%;
     margin-bottom: unset;
   }
+
   .underline::after {
     height: 20px;
   }
+
   .bg-image-about {
     flex-basis: 33%;
     min-height: 352px;

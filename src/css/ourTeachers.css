@@ -1,23 +1,6 @@
-.ourTeachers {
-  margin-bottom: 80px;
-}
-
-@media screen and (min-width: 768px) {
-  .ourTeachers {
-    margin-bottom: 100px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .ourTeachers {
-    margin-bottom: 150px;
-  }
-}
-
 .ourTeachers .section-headline {
   color: var(--primary-text-color);
   text-align: center;
-  font-family: Manrope;
   font-size: 32px;
   font-weight: 700;
   line-height: 1.13;

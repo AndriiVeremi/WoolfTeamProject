@@ -26,6 +26,9 @@
 }
 
 .section-bnt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: auto;
   padding: 14px 0;

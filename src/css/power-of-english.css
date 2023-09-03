@@ -284,6 +284,7 @@
 
   .books-img-wrapper {
     flex-shrink: 0;
+    align-self: center;
   }
 
   .white-card {

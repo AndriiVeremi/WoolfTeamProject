@@ -1,6 +1,23 @@
+.hero {
+  padding-top: 8px;
+  padding-bottom: 80px;
+}
+@media screen and (min-width: 768px) {
+.hero {
+    padding-top: 32px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    padding-top: 16px;
+    padding-bottom: 96px;
+  }
+}
+
 .hero-wrapper {
   position: relative;
-  margin: 8px auto 0px;
+  margin: 0 auto;
   padding: 425px 20px 72px 20px;
   border-radius: 16px;
   max-width: 100%;
@@ -48,7 +65,6 @@
 @media screen and (min-width: 1280px) {
 
   .hero-wrapper {
-    margin-top: 16px;
     max-width: 1152px;
     padding: 164px 64px;
   

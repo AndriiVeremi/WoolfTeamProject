@@ -12,8 +12,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 64px 16px 64px;
-
+  padding: 0 64px;
 }
 
 @media screen and (max-width: 1279px) {

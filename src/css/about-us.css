@@ -85,6 +85,7 @@
   screen and (min-resolution: 2dppx) and (min-width: 375px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 375px) {
   .bg-image-about {
+    height: 243px;
     background-size: 225px;
     background-image: url(../img/bg-about.png/memoji@2x.png);
   }

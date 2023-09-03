@@ -57,6 +57,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .application__form {
+    margin: 0;
+  }
+
   .application__form-wrapper {
     display: flex;
     justify-content: center;

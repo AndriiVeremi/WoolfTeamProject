@@ -126,11 +126,21 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 1.6;
-    transition: background-color 250ms var(--default-transition-function);
+    transition: background-color 350ms var(--default-transition-function);
 }
 
 .ourLessons-link:hover {
     background-color: var(--accent-hovered);
+}
+
+.ourLessons-link.link-color {
+    transition: background-color 350ms var(--default-transition-function),
+    color 350ms var(--default-transition-function);
+}
+
+.ourLessons-link:hover.link-color {
+    background-color: var(--white);
+    color: var(--accent);
 }
 
 .ourLessons-link:active {
